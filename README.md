@@ -15,6 +15,8 @@ target_link_libraries()
 
 [test1]: visual studio 2022
 cmake + vcpkg + vcpkg.json
+find_package
+vcpkg new --application 创建vcpkg.json
 
 
 [test2]: visual studio 2022
@@ -42,4 +44,9 @@ message(">>> git location: ${git_location}, ${git_imported}")
 
 [test 6] :visual studio 2022
 含参编译
+
+[test 7]: visual studio 2022
+尝试使用vcpkg.json 
+Qt
+find_package()
 
