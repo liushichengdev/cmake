@@ -59,3 +59,7 @@ app目录存放应用层代码
 public中存放公共代码
 main中存放主函数代码
 
+
+[test 10]: visual studio 2022
+指定输入目录
+
