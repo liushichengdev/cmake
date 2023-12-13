@@ -62,4 +62,13 @@ main中存放主函数代码
 
 [test 10]: visual studio 2022
 指定输入目录
+使用 _declspec(dllexport) 声明 DLL 代替 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+
+
+[test11]: visual studio 2022
+try Qt
+
+
+[test12]: visual studio 2022
+尝试新DLL替换 test 11 中 DLL（app4.dll）
 

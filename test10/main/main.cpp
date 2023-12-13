@@ -6,6 +6,7 @@
 #include "public3.h"
 #include "static.h"
 #include "app4.h"
+#include < stdlib.h >
 
 int main(int argc, char* argv[])
 {
@@ -18,5 +19,6 @@ int main(int argc, char* argv[])
 	static_print();
 	App4_print();
 	printf("main: end\r\n");
+	system("pause");
 	return 0;
 }
