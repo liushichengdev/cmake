@@ -3,6 +3,20 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
+
+# To automatically run UIC when building (User Interface Compiler)
+# To automatically run MOC when building (Meta Object Compiler)
+# To automatically run RCC when building (Resource Compiler)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+#SET(CMAKE_INCLUDE_CURRENT_DIR ON)
+#set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+
 # Enable Hot Reload for MSVC compilers if supported.
 if (POLICY CMP0141)
   cmake_policy(SET CMP0141 NEW)
@@ -17,8 +31,13 @@ message(STATUS "			  CMAKE_BINARY_DIR: " ${CMAKE_BINARY_DIR})
 message(STATUS "CMAKE_RUNTIME_OUTPUT_DIRECTORY: " ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 message(STATUS "CMAKE_LIBRARY_OUTPUT_DIRECTORY: " ${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
 message(STATUS "CMAKE_ARCHIVE_OUTPUT_DIRECTORY: " ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY})
+
+#project (test11 LANGUAGE CXX)
 project (test11)
 
+
+message(STATUS "This is QT_VERSION_MAJOR :" ${QT_VERSION_MAJOR})
+message(STATUS "KIT: " ${${KIT}_UIS})
 
 #if (CMAKE_VERSION VERSION_GREATER 3.12)
 #  set_property(TARGET test11 PROPERTY CXX_STANDARD 20)
