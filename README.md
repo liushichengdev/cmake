@@ -17,6 +17,7 @@ target_link_libraries()
 cmake + vcpkg + vcpkg.json
 find_package
 vcpkg new --application 创建vcpkg.json
+CMakeUserPresets.json中添加 "CMAKE_TOOLCHAIN_FILE":"C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake"
 
 
 [test2]: visual studio 2022
