@@ -1,6 +1,14 @@
 #ifndef XMLPraser__
 #define XMLPraser__
 
+#include <QString>
+#include <vector>
+#include <QFile>
+#include <QDomDocument>
+#include "Node.h"
+
+#pragma once
+
 class XMLPraser
 {
 public:

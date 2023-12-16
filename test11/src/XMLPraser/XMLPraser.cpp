@@ -2,10 +2,11 @@
 #include <QDomDocument>
 #include <QDebug>
 #include "XMLPraser.h"
+#include "Node.h"
 
  void XMLPraser::LoadXmlConfigFile()
 {
-     this->xmlConfigFile = new QFile("F:/Qt/Qt Widget/XMLParser/config.xml");
+     this->xmlConfigFile = new QFile("F:/cmake/test11/config/config.xml");
 
      this->dom = new QDomDocument();
 
@@ -27,7 +28,7 @@
      }
 }
 
-void BuildFunctionNodeVector()
+void XMLPraser::BuildFunctionNodeVector()
 {
     int id = 0;
     QDomNodeList nodes = this->dom->elementsByTagName("Function");

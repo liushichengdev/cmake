@@ -20,5 +20,4 @@ target_link_libraries(${PROJECT_NAME}
 	lib::XMLPraser
 	Qt${QT_VERSION_MAJOR}::Core
 	Qt${QT_VERSION_MAJOR}::Widgets
-
 )
