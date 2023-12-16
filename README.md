@@ -73,3 +73,14 @@ try Qt
 [test12]: visual studio 2022
 尝试新DLL替换 test 11 中 DLL（app4.dll）
 
+
+[test13]：visual studio 2022
+使用visual studio创建Qt项目
+
+[test14]: visual studio 2022
+利用Qt Creater创建Qt - cmake项目
+使用visual studio创建cmake项目，将上一个项目作为子目录复制到当前项目，修改CMakeLists.txt文件，实现编译
+追加Googletest
+
+
+
