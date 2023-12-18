@@ -19,7 +19,7 @@ set(PROJECT_SOURCES
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(CMake
+    qt_add_executable(${PROJECT_NAME}
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
@@ -41,7 +41,7 @@ else()
     endif()
 endif()
 
-target_link_libraries(CMake PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
@@ -65,5 +65,5 @@ endif()
 #)
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(CMake)
+    qt_finalize_executable(${PROJECT_NAME})
 endif()
